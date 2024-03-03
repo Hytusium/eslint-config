@@ -1,0 +1,40 @@
+{
+  "name": "@hytusium/eslint-config-react",
+  "version": "0.1.0",
+  "description": "An eslint config for personal (kash / Hytus) projects, which defines React rules",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hytusium/eslint-config.git",
+    "directory": "packages/react"
+  },
+  "author": "kash / Hytus <kash@hytus.net>",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hytusium/eslint-config-common": "0.1.0",
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-react-hooks": "4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.20",
+    "typescript": "5.3.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "packageManager": "yarn@4.1.0",
+  "engines": {
+    "node": "^18.18.0 || >=20.0.0"
+  }
+}

@@ -1,34 +1,16 @@
 {
-  "name": "eslint-config",
-  "version": "0.1.0",
-  "description": "my eslint configs",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Hytusium/eslint-config.git"
-  },
+  "name": "@hytusium/eslint-config",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "author": "kash / Hytus <kash@hytus.net>",
   "license": "MIT",
-  "scripts": {
-    "build": "tsc",
-    "typecheck": "tsc --noEmit"
+  "packageManager": "yarn@4.1.0",
+  "engines": {
+    "node": "^18.18.0 || >=20.0.0"
   },
   "devDependencies": {
-    "@types/eslint": "8.44.6",
-    "@types/node": "20.8.10",
-    "@typescript-eslint/eslint-plugin": "6.9.1",
-    "@typescript-eslint/parser": "6.9.1",
-    "eslint": "8.52.0",
-    "eslint-config-prettier": "9.0.0",
-    "eslint-import-resolver-typescript": "3.6.1",
-    "eslint-plugin-import": "2.29.0",
-    "eslint-plugin-react": "7.33.2",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-unused-imports": "3.0.0",
-    "prettier": "3.0.3",
-    "typescript": "5.2.2"
-  },
-  "packageManager": "yarn@4.0.1",
-  "engines": {
-    "node": ">=18.0.0"
+    "prettier": "3.2.5"
   }
 }

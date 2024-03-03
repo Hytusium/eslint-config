@@ -1,0 +1,42 @@
+{
+  "name": "@hytusium/eslint-config-common",
+  "version": "0.1.0",
+  "description": "An eslint config for personal (kash / Hytus) projects, which defines common rules",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hytusium/eslint-config.git",
+    "directory": "packages/common"
+  },
+  "author": "kash / Hytus <kash@hytus.net>",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "7.0.2",
+    "eslint": "8.57.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-unused-imports": "3.1.0",
+    "typescript-eslint": "7.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.20",
+    "typescript": "5.3.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "packageManager": "yarn@4.1.0",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
