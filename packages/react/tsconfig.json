@@ -5,7 +5,7 @@
     "outDir": "./dist",
     "rootDir": "."
   },
-  "include": ["src", "typings"],
+  "include": ["src", "types"],
   "references": [
     {"path": "../common/tsconfig.json"}
   ]
