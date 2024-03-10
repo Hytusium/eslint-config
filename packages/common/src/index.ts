@@ -8,6 +8,9 @@ import pluginNode from "eslint-plugin-n"
 // Config transformer
 const compat = new FlatCompat()
 
+// ignore files
+const ignoreFiles = ["**/node_modules/**", "**/.yarn/**", "**/dist/**"]
+
 /**
  * Common/Base config in all @hytusium projects.
  */
@@ -17,27 +20,31 @@ const config = tseslint.config(
     plugins: {
       ["import"]: pluginImport,
       ["unused-imports"]: pluginUnusedImports,
-      ["n"]: pluginNode
+      ["n"]: pluginNode,
     },
   },
   {
-    ignores: ["**/node_modules/**", "**/.yarn/**", "**/dist/**"],
+    ignores: ignoreFiles,
   },
 
   // extends
-  // * eslint recommended
-  eslint.configs.recommended,
-  // * eslint-plugin-n recommended
-  pluginNode.configs["flat/recommended"],
-  // * eslint-plugin-import recommended (transform LegacyConfig to FlatConfig using `FlatCompat`)
-  ...compat.config(pluginImport.configs.recommended),
+  {
+    extends: [
+      // * eslint recommended
+      eslint.configs.recommended,
+      // * eslint-plugin-n recommended
+      pluginNode.configs["flat/recommended"],
+      // * eslint-plugin-import recommended (transform LegacyConfig to FlatConfig using `FlatCompat`)
+      ...compat.config(pluginImport.configs.recommended),
+    ],
+  },
 
   // rules
   {
     rules: {
       // eslint-plugin-n rules
       // * enforce using the `node:` protocol when importing Node.js builtin modules.
-      "n/prefer-node-protocol": "warn",
+      "n/prefer-node-protocol": "error",
 
       // eslint-plugin-unused-imports rules
       "unused-imports/no-unused-imports": "error",
@@ -65,3 +72,5 @@ const config = tseslint.config(
 )
 
 export default config
+
+export { ignoreFiles }

@@ -19,9 +19,11 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc -b",
+    "clean": "tsc -b --clean",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@eslint/eslintrc": "3.0.2",
     "@hytusium/eslint-config-common": "0.1.0",
     "@typescript-eslint/utils": "7.1.0",
     "eslint-import-resolver-typescript": "3.6.1",
@@ -35,7 +37,7 @@
   "peerDependencies": {
     "eslint": "^8.56.0"
   },
-  "packageManager": "yarn@4.1.0",
+  "packageManager": "yarn@4.1.1",
   "engines": {
     "node": "^18.18.0 || >=20.0.0"
   }

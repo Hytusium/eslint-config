@@ -19,6 +19,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc -b",
+    "clean": "tsc -b --clean",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -36,7 +37,7 @@
   "peerDependencies": {
     "eslint": "^8.56.0"
   },
-  "packageManager": "yarn@4.1.0",
+  "packageManager": "yarn@4.1.1",
   "engines": {
     "node": "^18.18.0 || >=20.0.0"
   }
