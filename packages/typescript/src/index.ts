@@ -25,6 +25,19 @@ const config = tseslint.config(
     ],
   },
 
+  // settings
+  {
+    settings: {
+      "import/parsers": {
+        "@typescript-eslint/parser": [".ts", ".tsx"],
+      },
+      "import/resolver": {
+        typescript: true,
+        node: true,
+      },
+    },
+  },
+
   {
     rules: {
       "@typescript-eslint/explicit-module-boundary-types": "off",

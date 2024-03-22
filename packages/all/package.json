@@ -25,12 +25,13 @@
   "dependencies": {
     "@hytusium/eslint-config-react": "0.1.0",
     "@hytusium/eslint-config-typescript": "0.1.0",
-    "@typescript-eslint/utils": "7.1.0",
-    "typescript-eslint": "7.1.0"
+    "@typescript-eslint/utils": "7.3.1",
+    "eslint-config-prettier": "9.1.0",
+    "typescript-eslint": "7.3.1"
   },
   "devDependencies": {
-    "@types/node": "20.11.20",
-    "typescript": "5.3.3"
+    "@types/node": "20.11.30",
+    "typescript": "5.4.3"
   },
   "peerDependencies": {
     "eslint": "^8.56.0"
