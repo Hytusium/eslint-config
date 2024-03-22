@@ -1,7 +1,7 @@
-import tseslint from "typescript-eslint"
-import pluginImport, { rules } from "eslint-plugin-import"
-import commonConfig, { ignoreFiles } from "@hytusium/eslint-config-common"
 import { FlatCompat } from "@eslint/eslintrc"
+import commonConfig from "@hytusium/eslint-config-common"
+import pluginImport from "eslint-plugin-import"
+import tseslint from "typescript-eslint"
 
 // Config transformer
 const compat = new FlatCompat()
@@ -11,7 +11,6 @@ const config = tseslint.config(
     plugins: {
       ["@typescript-eslint"]: tseslint.plugin,
     },
-    ignores: ignoreFiles,
   },
 
   // extends

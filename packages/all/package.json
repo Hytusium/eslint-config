@@ -1,11 +1,11 @@
 {
-  "name": "@hytusium/eslint-config-common",
+  "name": "@hytusium/eslint-config-all",
   "version": "0.1.0",
-  "description": "An eslint config for personal (kash / Hytus) projects, which defines common rules",
+  "description": "An eslint config for personal (kash / Hytus) projects, which contains all configs",
   "repository": {
     "type": "git",
     "url": "https://github.com/Hytusium/eslint-config.git",
-    "directory": "packages/common"
+    "directory": "packages/all"
   },
   "author": "kash / Hytus <kash@hytus.net>",
   "license": "MIT",
@@ -23,12 +23,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@hytusium/eslint-config-react": "0.1.0",
+    "@hytusium/eslint-config-typescript": "0.1.0",
     "@typescript-eslint/utils": "7.1.0",
-    "eslint": "8.57.0",
-    "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-n": "16.6.2",
-    "eslint-plugin-unicorn": "51.0.1",
-    "eslint-plugin-unused-imports": "3.1.0",
     "typescript-eslint": "7.1.0"
   },
   "devDependencies": {

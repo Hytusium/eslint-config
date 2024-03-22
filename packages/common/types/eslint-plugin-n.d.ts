@@ -1,5 +1,9 @@
 declare module "eslint-plugin-n" {
-  import type { ClassicConfig, FlatConfig, Linter } from "@typescript-eslint/utils/ts-eslint"
+  import type {
+    ClassicConfig,
+    FlatConfig,
+    Linter,
+  } from "@typescript-eslint/utils/ts-eslint"
 
   declare const exprt: {
     configs: {

@@ -1,9 +1,10 @@
 import { FlatCompat } from "@eslint/eslintrc"
 import eslint from "@eslint/js"
-import tseslint from "typescript-eslint"
 import pluginImport from "eslint-plugin-import"
-import pluginUnusedImports from "eslint-plugin-unused-imports"
 import pluginNode from "eslint-plugin-n"
+import pluginUnicorn from "eslint-plugin-unicorn"
+import pluginUnusedImports from "eslint-plugin-unused-imports"
+import tseslint from "typescript-eslint"
 
 // Config transformer
 const compat = new FlatCompat()
@@ -20,7 +21,6 @@ const config = tseslint.config(
     plugins: {
       ["import"]: pluginImport,
       ["unused-imports"]: pluginUnusedImports,
-      ["n"]: pluginNode,
     },
   },
   {
@@ -36,15 +36,17 @@ const config = tseslint.config(
       pluginNode.configs["flat/recommended"],
       // * eslint-plugin-import recommended (transform LegacyConfig to FlatConfig using `FlatCompat`)
       ...compat.config(pluginImport.configs.recommended),
+      // * eslint-plugin-unicorn recommended
+      pluginUnicorn.configs["flat/recommended"],
     ],
   },
 
   // rules
   {
     rules: {
-      // eslint-plugin-n rules
+      // eslint-plugin-unicorn rules
       // * enforce using the `node:` protocol when importing Node.js builtin modules.
-      "n/prefer-node-protocol": "error",
+      "unicorn/prefer-node-protocol": "error",
 
       // eslint-plugin-unused-imports rules
       "unused-imports/no-unused-imports": "error",
@@ -72,5 +74,3 @@ const config = tseslint.config(
 )
 
 export default config
-
-export { ignoreFiles }
