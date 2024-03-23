@@ -1,9 +1,8 @@
 import reactConfig from "@hytusium/eslint-config-react"
 import typescriptConfig from "@hytusium/eslint-config-typescript"
-import prettierConfig from "eslint-config-prettier"
-import tseslint from "typescript-eslint"
+import { mergeConfig, prettierConfig } from "@hytusium/eslint-plugins"
 
-const config = tseslint.config(
+const config = mergeConfig(
   // extends
   {
     extends: [

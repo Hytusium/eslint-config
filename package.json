@@ -1,6 +1,6 @@
 {
-  "name": "@hytusium/eslint-config",
   "private": true,
+  "name": "@hytusium/eslint-config-collections",
   "workspaces": [
     "packages/*"
   ],
@@ -18,8 +18,8 @@
   },
   "devDependencies": {
     "@hytusium/eslint-config-typescript": "workspace:.",
+    "@hytusium/eslint-plugins": "workspace:.",
     "eslint": "8.57.0",
-    "eslint-config-prettier": "9.1.0",
     "npm-run-all2": "6.1.2",
     "prettier": "3.2.5",
     "typescript": "5.4.3",

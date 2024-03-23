@@ -1,15 +1,19 @@
-import { FlatCompat } from "@eslint/eslintrc"
 import commonConfig from "@hytusium/eslint-config-common"
-import pluginImport from "eslint-plugin-import"
-import tseslint from "typescript-eslint"
+import {
+  FlatCompat,
+  mergeConfig,
+  tseslintPlugin,
+  tseslintConfig,
+  pluginImport,
+} from "@hytusium/eslint-plugins"
 
 // Config transformer
 const compat = new FlatCompat()
 
-const config = tseslint.config(
+const config = mergeConfig(
   {
     plugins: {
-      ["@typescript-eslint"]: tseslint.plugin,
+      ["@typescript-eslint"]: tseslintPlugin,
     },
   },
 
@@ -19,7 +23,7 @@ const config = tseslint.config(
       // * @hytusium/eslint-config-common
       ...commonConfig,
       // * @typescript-eslint recommended-type-checked
-      ...tseslint.configs.recommendedTypeChecked,
+      ...tseslintConfig.recommendedTypeChecked,
       // * eslint-pluigin-import typescript
       ...compat.config(pluginImport.configs.typescript),
     ],

@@ -12,8 +12,8 @@
   "type": "module",
   "exports": {
     ".": {
-      "default": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
   "types": "./dist/index.d.ts",
@@ -23,15 +23,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@eslint/eslintrc": "3.0.2",
-    "@eslint/js": "8.57.0",
-    "@typescript-eslint/utils": "7.3.1",
-    "eslint": "8.57.0",
-    "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-n": "16.6.2",
-    "eslint-plugin-unicorn": "51.0.1",
-    "eslint-plugin-unused-imports": "3.1.0",
-    "typescript-eslint": "7.3.1"
+    "@hytusium/eslint-plugins": "0.1.0"
   },
   "devDependencies": {
     "@types/node": "20.11.30",

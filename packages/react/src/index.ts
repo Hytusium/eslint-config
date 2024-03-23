@@ -1,14 +1,16 @@
-import { FlatCompat } from "@eslint/eslintrc"
 import commonConfig from "@hytusium/eslint-config-common"
-import pluginImport from "eslint-plugin-import"
-import pluginReact from "eslint-plugin-react"
-import pluginReactHooks from "eslint-plugin-react-hooks"
-import tseslint from "typescript-eslint"
+import {
+  FlatCompat,
+  mergeConfig,
+  pluginReact,
+  pluginReactHooks,
+  pluginImport,
+} from "@hytusium/eslint-plugins"
 
 // Config transformer
 const compat = new FlatCompat()
 
-const config = tseslint.config(
+const config = mergeConfig(
   {
     plugins: {
       ["react"]: pluginReact,

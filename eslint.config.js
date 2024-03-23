@@ -1,8 +1,7 @@
 import typescriptConfig from "@hytusium/eslint-config-typescript"
-import prettierConfig from "eslint-config-prettier"
-import tseslint from "typescript-eslint"
+import { mergeConfig, prettierConfig } from "@hytusium/eslint-plugins"
 
-export default tseslint.config(
+export default mergeConfig(
   {
     extends: [
       // * @hytusium/eslint-config-typescript
@@ -17,6 +16,13 @@ export default tseslint.config(
     languageOptions: {
       parserOptions: {
         project: ["tsconfig.eslint.json", "packages/*/tsconfig.json"],
+      },
+    },
+    settings: {
+      "import/resolver": {
+        typescript: {
+          project: ["tsconfig.eslint.json", "packages/*/tsconfig.json"],
+        },
       },
     },
   }

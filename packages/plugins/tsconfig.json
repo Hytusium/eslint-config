@@ -5,8 +5,5 @@
     "outDir": "./dist",
     "rootDir": "./src"
   },
-  "include": ["src"],
-  "references": [
-    { "path": "../plugins/tsconfig.json" }
-  ]
+  "include": ["src", "types"]
 }

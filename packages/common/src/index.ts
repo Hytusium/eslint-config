@@ -1,10 +1,12 @@
-import { FlatCompat } from "@eslint/eslintrc"
-import eslint from "@eslint/js"
-import pluginImport from "eslint-plugin-import"
-import pluginNode from "eslint-plugin-n"
-import pluginUnicorn from "eslint-plugin-unicorn"
-import pluginUnusedImports from "eslint-plugin-unused-imports"
-import tseslint from "typescript-eslint"
+import {
+  FlatCompat,
+  eslint,
+  pluginImport,
+  pluginUnusedImports,
+  pluginNode,
+  pluginUnicorn,
+  mergeConfig,
+} from "@hytusium/eslint-plugins"
 
 // Config transformer
 const compat = new FlatCompat()
@@ -15,7 +17,7 @@ const ignoreFiles = ["**/node_modules/**", "**/.yarn/**", "**/dist/**"]
 /**
  * Common/Base config in all @hytusium projects.
  */
-const config = tseslint.config(
+const config = mergeConfig(
   // set plugin rule keys
   {
     plugins: {
