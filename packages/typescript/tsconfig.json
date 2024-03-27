@@ -7,6 +7,7 @@
   },
   "include": ["src"],
   "references": [
-    { "path": "../common/tsconfig.json" }
+    { "path": "../common/tsconfig.json" },
+    { "path": "../plugins/tsconfig.json" }
   ]
 }
