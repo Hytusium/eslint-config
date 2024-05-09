@@ -26,25 +26,25 @@
   },
   "dependencies": {
     "@eslint/eslintrc": "3.0.2",
-    "@eslint/js": "8.57.0",
-    "@typescript-eslint/utils": "7.3.1",
+    "@eslint/js": "9.2.0",
+    "@typescript-eslint/utils": "7.8.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-n": "16.6.2",
-    "eslint-plugin-react": "7.33.2",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "eslint-plugin-unicorn": "51.0.1",
-    "eslint-plugin-unused-imports": "3.1.0",
-    "typescript-eslint": "7.3.1"
+    "eslint-plugin-n": "17.5.1",
+    "eslint-plugin-react": "7.34.1",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "eslint-plugin-unicorn": "52.0.0",
+    "eslint-plugin-unused-imports": "3.2.0",
+    "typescript-eslint": "7.8.0"
   },
   "devDependencies": {
-    "@types/node": "20.11.30",
-    "typescript": "5.4.3"
+    "@types/node": "20.12.11",
+    "typescript": "5.4.5"
   },
   "peerDependencies": {
     "eslint": "^8.56.0"
   },
-  "packageManager": "yarn@4.1.1",
+  "packageManager": "yarn@4.2.2",
   "engines": {
     "node": "^18.18.0 || >=20.0.0"
   }
