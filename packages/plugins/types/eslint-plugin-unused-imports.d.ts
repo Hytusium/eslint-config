@@ -1,8 +1,8 @@
 declare module "eslint-plugin-unused-imports" {
-  import type { Linter } from "@typescript-eslint/utils/ts-eslint"
+  import type { Linter } from "eslint"
 
   declare const exprt: {
-    rules: NonNullable<Linter.Plugin["rules"]>
+    rules: Linter.RulesRecord
   }
   export = exprt
 }

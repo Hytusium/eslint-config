@@ -24,16 +24,16 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@hytusium/eslint-plugins": "0.1.0"
+    "@hytusium/eslint-plugins": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "20.12.11",
-    "typescript": "5.4.5"
+    "@types/node": "22.0.0",
+    "typescript": "5.5.4"
   },
   "peerDependencies": {
-    "eslint": "^8.56.0"
+    "eslint": ">=8.56.0"
   },
-  "packageManager": "yarn@4.2.2",
+  "packageManager": "yarn@4.3.1",
   "engines": {
     "node": "^18.18.0 || >=20.0.0"
   }

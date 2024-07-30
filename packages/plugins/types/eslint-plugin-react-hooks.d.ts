@@ -1,14 +1,12 @@
 declare module "eslint-plugin-react-hooks" {
   import type {
-    ClassicConfig,
-    Linter,
-  } from "@typescript-eslint/utils/ts-eslint"
+    ESLint,
+  } from "eslint"
 
   declare const exprt: {
     configs: {
-      recommended: ClassicConfig.Config
+      recommended: ESLint.ConfigData
     }
-    rules: NonNullable<Linter.Plugin["rules"]>
   }
   export = exprt
 }

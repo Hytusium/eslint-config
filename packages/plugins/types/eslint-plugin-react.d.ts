@@ -1,16 +1,16 @@
 declare module "eslint-plugin-react" {
   import type {
-    ClassicConfig,
+    ESLint,
     Linter,
-  } from "@typescript-eslint/utils/ts-eslint"
+  } from "eslint"
 
   declare const exprt: {
     configs: {
-      recommended: ClassicConfig.Config
-      all: ClassicConfig.Config
-      "jsx-runtime": ClassicConfig.Config
+      recommended: ESLint.ConfigData
+      all: ESLint.ConfigData
+      "jsx-runtime": ESLint.ConfigData
     }
-    rules: NonNullable<Linter.Plugin["rules"]>
+    rules: Linter.RulesRecord
   }
   export = exprt
 }

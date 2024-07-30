@@ -25,26 +25,27 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@eslint/eslintrc": "3.0.2",
-    "@eslint/js": "9.2.0",
-    "@typescript-eslint/utils": "7.8.0",
+    "@eslint/eslintrc": "3.1.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-n": "17.5.1",
-    "eslint-plugin-react": "7.34.1",
+    "eslint-plugin-n": "17.10.1",
+    "eslint-plugin-react": "7.35.0",
     "eslint-plugin-react-hooks": "4.6.2",
-    "eslint-plugin-unicorn": "52.0.0",
-    "eslint-plugin-unused-imports": "3.2.0",
-    "typescript-eslint": "7.8.0"
+    "eslint-plugin-unicorn": "55.0.0",
+    "eslint-plugin-unused-imports": "4.0.1"
   },
   "devDependencies": {
-    "@types/node": "20.12.11",
-    "typescript": "5.4.5"
+    "@eslint/js": "9.8.0",
+    "@types/eslint__eslintrc": "2.1.2",
+    "@types/eslint__js": "8.42.3",
+    "@types/node": "22.0.0",
+    "typescript": "5.5.4",
+    "typescript-eslint": "7.18.0"
   },
   "peerDependencies": {
-    "eslint": "^8.56.0"
+    "eslint": ">=8.56.0"
   },
-  "packageManager": "yarn@4.2.2",
+  "packageManager": "yarn@4.3.1",
   "engines": {
     "node": "^18.18.0 || >=20.0.0"
   }
