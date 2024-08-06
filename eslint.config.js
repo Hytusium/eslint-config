@@ -15,13 +15,21 @@ export default mergeConfig(
   {
     languageOptions: {
       parserOptions: {
-        project: ["tsconfig.eslint.json", "packages/*/tsconfig.json"],
+        projectService: {
+          allowDefaultProject: ["*.js"],
+          defaultProject: "./tsconfig.json",
+        },
+        tsconfigRootDir: import.meta.dirname,
       },
     },
     settings: {
-      "import/resolver": {
+      "import-x/resolver": {
         typescript: {
-          project: ["tsconfig.eslint.json", "packages/*/tsconfig.json"],
+          projectService: {
+            allowDefaultProject: ["*.js"],
+            defaultProject: "./tsconfig.json",
+          },
+          tsconfigRootDir: import.meta.dirname,
         },
       },
     },

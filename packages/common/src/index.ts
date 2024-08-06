@@ -21,7 +21,7 @@ const config = mergeConfig(
   // set plugin rule keys
   {
     plugins: {
-      ["import"]: pluginImport,
+      ["import-x"]: pluginImport,
       ["unused-imports"]: pluginUnusedImports,
     },
   },
@@ -54,7 +54,7 @@ const config = mergeConfig(
       "unused-imports/no-unused-imports": "error",
 
       // eslint-plugin-import rules
-      "import/order": [
+      "import-x/order": [
         "warn",
         {
           "newlines-between": "always",

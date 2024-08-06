@@ -32,11 +32,17 @@ const config = mergeConfig(
   // settings
   {
     settings: {
-      "import/parsers": {
-        "@typescript-eslint/parser": [".ts", ".tsx"],
+      "import-x/parsers": {
+        "@typescript-eslint/parser": [".ts", ".tsx", ".cts", "mts"],
       },
-      "import/resolver": {
-        typescript: true,
+      "import-x/resolver": {
+        typescript: {
+          projectService: {
+            allowDefaultProject: ["*.js"],
+            defaultProject: "./tsconfig.json",
+          },
+          tsconfigRootDir: import.meta.dirname,
+        },
         node: true,
       },
     },
@@ -45,15 +51,6 @@ const config = mergeConfig(
   {
     rules: {
       "@typescript-eslint/explicit-module-boundary-types": "off",
-      "@typescript-eslint/ban-types": [
-        "error",
-        {
-          extendDefaults: true,
-          types: {
-            "{}": false,
-          },
-        },
-      ],
       "@typescript-eslint/no-unsafe-assignment": "off",
       "@typescript-eslint/no-unsafe-return": "off",
       "@typescript-eslint/ban-ts-comment": "warn",

@@ -1,10 +1,7 @@
 declare module "eslint-plugin-react" {
-  import type {
-    ESLint,
-    Linter,
-  } from "eslint"
+  import type { ESLint, Linter } from "eslint"
 
-  declare const exprt: {
+  const exprt: {
     configs: {
       recommended: ESLint.ConfigData
       all: ESLint.ConfigData

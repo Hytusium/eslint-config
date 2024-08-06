@@ -7,7 +7,7 @@ export function mergeConfig(...configs: ConfigWithExtends[]) {
 export { FlatCompat } from "@eslint/eslintrc"
 export { default as eslint } from "@eslint/js"
 export { default as prettierConfig } from "eslint-config-prettier"
-export { default as pluginImport } from "eslint-plugin-import"
+export { default as pluginImport } from "eslint-plugin-import-x"
 export { default as pluginNode } from "eslint-plugin-n"
 export { default as pluginUnicorn } from "eslint-plugin-unicorn"
 export { default as pluginUnusedImports } from "eslint-plugin-unused-imports"
