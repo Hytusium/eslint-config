@@ -13,7 +13,9 @@ const compat = new FlatCompat()
 const config = mergeConfig(
   {
     plugins: {
+      // @ts-expect-error Incompatible types between `Linter.RulesRecord` in `eslint` and `LooseRuleDefinition` (`FlatConfig.Plugin.rules`) in `@typescript-eslint/utils/ts-eslint`
       ["react"]: pluginReact,
+      // @ts-expect-error Incompatible types between `Linter.RulesRecord` in `eslint` and `LooseRuleDefinition` (`FlatConfig.Plugin.rules`) in `@typescript-eslint/utils/ts-eslint`
       ["react-hooks"]: pluginReactHooks,
     },
   },

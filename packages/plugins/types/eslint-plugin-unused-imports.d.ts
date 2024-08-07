@@ -4,5 +4,6 @@ declare module "eslint-plugin-unused-imports" {
   const exprt: {
     rules: Linter.RulesRecord
   }
+
   export = exprt
 }

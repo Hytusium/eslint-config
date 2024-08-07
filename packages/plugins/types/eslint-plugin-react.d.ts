@@ -9,5 +9,6 @@ declare module "eslint-plugin-react" {
     }
     rules: Linter.RulesRecord
   }
+
   export = exprt
 }

@@ -6,5 +6,6 @@ declare module "eslint-plugin-react-hooks" {
       recommended: ESLint.ConfigData
     }
   }
+
   export = exprt
 }

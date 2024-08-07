@@ -22,6 +22,7 @@ const config = mergeConfig(
   {
     plugins: {
       ["import-x"]: pluginImport,
+      // @ts-expect-error Incompatible types between `Linter.RulesRecord` in `eslint` and `LooseRuleDefinition` (`FlatConfig.Plugin.rules`) in `@typescript-eslint/utils/ts-eslint`
       ["unused-imports"]: pluginUnusedImports,
     },
   },
