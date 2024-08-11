@@ -6,6 +6,7 @@
   ],
   "author": "kash / Hytus <kash@hytus.net>",
   "license": "MIT",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "lint": "run-p \"lint:*\"",
@@ -14,7 +15,10 @@
     "format": "run-p \"format:*\"",
     "format:eslint": "eslint \"**/*.{js,ts}\" --fix",
     "format:prettier": "prettier --write \"**/*.{js,ts}\"",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "bump:patch": "tsx ./scripts/bump-version.ts --patch",
+    "bump:minor": "tsx ./scripts/bump-version.ts --minor",
+    "bump:major": "tsx ./scripts/bump-version.ts --major"
   },
   "devDependencies": {
     "@hytusium/eslint-config-typescript": "workspace:*",
@@ -22,11 +26,12 @@
     "eslint": "9.8.0",
     "npm-run-all2": "6.2.2",
     "prettier": "3.3.3",
+    "tsx": "4.17.0",
     "typescript": "5.5.4",
     "typescript-eslint": "8.0.1"
   },
   "packageManager": "yarn@4.4.0",
   "engines": {
-    "node": "^18.18.0 || >=20.0.0"
+    "node": ">=20.0.0"
   }
 }
