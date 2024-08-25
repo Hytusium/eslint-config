@@ -10,11 +10,11 @@
   "type": "module",
   "scripts": {
     "lint": "run-p \"lint:*\"",
-    "lint:eslint": "eslint \"**/*.{js,ts}\"",
-    "lint:prettier": "prettier --check \"**/*.{js,ts}\"",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check \"**/*.{js,mjs,ts,json}\"",
     "format": "run-p \"format:*\"",
-    "format:eslint": "eslint \"**/*.{js,ts}\" --fix",
-    "format:prettier": "prettier --write \"**/*.{js,ts}\"",
+    "format:eslint": "eslint . --fix",
+    "format:prettier": "prettier --write \"**/*.{js,mjs,ts,json}\"",
     "typecheck": "tsc --noEmit",
     "bump:patch": "tsx ./scripts/bump-version.ts --patch",
     "bump:minor": "tsx ./scripts/bump-version.ts --minor",
@@ -23,15 +23,15 @@
   "devDependencies": {
     "@hytusium/eslint-config-typescript": "workspace:*",
     "@hytusium/eslint-plugins": "workspace:*",
-    "eslint": "9.9.0",
+    "eslint": "9.9.1",
     "npm-run-all2": "6.2.2",
     "prettier": "3.3.3",
-    "tsx": "4.17.0",
+    "tsx": "4.18.0",
     "typescript": "5.5.4",
-    "typescript-eslint": "8.1.0"
+    "typescript-eslint": "8.2.0"
   },
   "packageManager": "yarn@4.4.0",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=20.11.0"
   }
 }

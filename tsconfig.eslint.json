@@ -3,9 +3,5 @@
   "compilerOptions": {
     "checkJs": true
   },
-  "include": [
-    "scripts",
-    "eslint.config.js",
-    "prettier.config.js"
-  ]
+  "include": ["scripts", "eslint.config.mjs", "prettier.config.mjs"]
 }

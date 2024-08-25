@@ -5,6 +5,8 @@ import {
   pluginReact,
   pluginReactHooks,
   pluginImport,
+  fixupPluginRules,
+  fixupConfigRules,
 } from "@hytusium/eslint-plugins"
 
 // Config transformer
@@ -13,10 +15,8 @@ const compat = new FlatCompat()
 const config = mergeConfig(
   {
     plugins: {
-      // @ts-expect-error Incompatible types between `Linter.RulesRecord` in `eslint` and `LooseRuleDefinition` (`FlatConfig.Plugin.rules`) in `@typescript-eslint/utils/ts-eslint`
-      ["react"]: pluginReact,
-      // @ts-expect-error Incompatible types between `Linter.RulesRecord` in `eslint` and `LooseRuleDefinition` (`FlatConfig.Plugin.rules`) in `@typescript-eslint/utils/ts-eslint`
-      ["react-hooks"]: pluginReactHooks,
+      ["react"]: fixupPluginRules(pluginReact),
+      ["react-hooks"]: fixupPluginRules(pluginReactHooks),
     },
   },
 
@@ -27,13 +27,13 @@ const config = mergeConfig(
       ...commonConfig,
       // TODO: change the type definition of `eslint-plugin-react*` (to flat config)
       // * eslint-plugin-react recommended
-      ...compat.config(pluginReact.configs.recommended),
+      ...fixupConfigRules(compat.config(pluginReact.configs.recommended)),
       // * eslint-plugin-react jsx-runtime
-      ...compat.config(pluginReact.configs["jsx-runtime"]),
+      ...fixupConfigRules(compat.config(pluginReact.configs["jsx-runtime"])),
       // * eslint-plugin-react-hooks recommended
-      ...compat.config(pluginReactHooks.configs.recommended),
+      ...fixupConfigRules(compat.config(pluginReactHooks.configs.recommended)),
       // * eslint-plugin-import react
-      ...compat.config(pluginImport.configs.react),
+      ...fixupConfigRules(compat.config(pluginImport.configs.react)),
     ],
   },
 

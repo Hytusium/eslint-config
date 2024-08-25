@@ -32,17 +32,11 @@ const config = mergeConfig(
   // settings
   {
     settings: {
-      "import-x/parsers": {
+      "import/parsers": {
         "@typescript-eslint/parser": [".ts", ".tsx", ".cts", "mts"],
       },
-      "import-x/resolver": {
-        typescript: {
-          projectService: {
-            allowDefaultProject: ["*.js"],
-            defaultProject: "./tsconfig.json",
-          },
-          tsconfigRootDir: import.meta.dirname,
-        },
+      "import/resolver": {
+        typescript: true,
         node: true,
       },
     },

@@ -19,8 +19,8 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc -b",
-    "clean": "tsc -b --clean",
+    "build": "tsc -b tsconfig.build.json",
+    "clean": "tsc -b tsconfig.build.json --clean",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -28,9 +28,9 @@
     "@hytusium/eslint-plugins": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "22.3.0",
+    "@types/node": "22.5.0",
     "eslint-import-resolver-typescript": "3.6.1",
-    "eslint-plugin-import-x": "3.1.0",
+    "eslint-plugin-import": "2.29.1",
     "typescript": "5.5.4"
   },
   "peerDependencies": {
@@ -38,6 +38,6 @@
   },
   "packageManager": "yarn@4.4.0",
   "engines": {
-    "node": "^18.18.0 || >=20.0.0"
+    "node": ">=20.11.0"
   }
 }

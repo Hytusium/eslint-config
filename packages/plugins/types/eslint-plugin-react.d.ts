@@ -1,5 +1,5 @@
 declare module "eslint-plugin-react" {
-  import type { ESLint, Linter } from "eslint"
+  import type { ESLint, Rule } from "eslint"
 
   const exprt: {
     configs: {
@@ -7,7 +7,7 @@ declare module "eslint-plugin-react" {
       all: ESLint.ConfigData
       "jsx-runtime": ESLint.ConfigData
     }
-    rules: Linter.RulesRecord
+    rules: Record<string, Rule.RuleModule>
   }
 
   export = exprt

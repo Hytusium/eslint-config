@@ -6,6 +6,8 @@ import {
   pluginNode,
   pluginUnicorn,
   mergeConfig,
+  fixupConfigRules,
+  fixupPluginRules,
 } from "@hytusium/eslint-plugins"
 
 // Config transformer
@@ -21,11 +23,12 @@ const config = mergeConfig(
   // set plugin rule keys
   {
     plugins: {
-      ["import-x"]: pluginImport,
-      // @ts-expect-error Incompatible types between `Linter.RulesRecord` in `eslint` and `LooseRuleDefinition` (`FlatConfig.Plugin.rules`) in `@typescript-eslint/utils/ts-eslint`
+      ["import"]: fixupPluginRules(pluginImport),
       ["unused-imports"]: pluginUnusedImports,
     },
   },
+
+  // ignore files
   {
     ignores: ignoreFiles,
   },
@@ -38,7 +41,7 @@ const config = mergeConfig(
       // * eslint-plugin-n recommended
       pluginNode.configs["flat/recommended"],
       // * eslint-plugin-import recommended (transform LegacyConfig to FlatConfig using `FlatCompat`)
-      ...compat.config(pluginImport.configs.recommended),
+      ...fixupConfigRules(compat.config(pluginImport.configs.recommended)),
       // * eslint-plugin-unicorn recommended
       pluginUnicorn.configs["flat/recommended"],
     ],
@@ -55,7 +58,7 @@ const config = mergeConfig(
       "unused-imports/no-unused-imports": "error",
 
       // eslint-plugin-import rules
-      "import-x/order": [
+      "import/order": [
         "warn",
         {
           "newlines-between": "always",
