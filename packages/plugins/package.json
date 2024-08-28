@@ -39,7 +39,7 @@
   "devDependencies": {
     "@types/eslint__eslintrc": "2.1.2",
     "@types/eslint__js": "8.42.3",
-    "@types/node": "22.5.0",
+    "@types/node": "22.5.1",
     "typescript": "5.5.4",
     "typescript-eslint": "8.2.0"
   },
