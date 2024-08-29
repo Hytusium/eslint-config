@@ -24,12 +24,13 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@hytusium/eslint-config-common": "workspace:*",
     "@hytusium/eslint-config-react": "workspace:*",
     "@hytusium/eslint-config-typescript": "workspace:*",
     "@hytusium/eslint-plugins": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "22.5.0",
+    "@types/node": "20.16.2",
     "typescript": "5.5.4"
   },
   "peerDependencies": {

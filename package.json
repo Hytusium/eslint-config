@@ -21,8 +21,10 @@
     "bump:major": "tsx ./scripts/bump-version.ts --major"
   },
   "devDependencies": {
+    "@hytusium/eslint-config-common": "workspace:*",
     "@hytusium/eslint-config-typescript": "workspace:*",
     "@hytusium/eslint-plugins": "workspace:*",
+    "@types/node": "20.16.2",
     "eslint": "9.9.1",
     "npm-run-all2": "6.2.2",
     "prettier": "3.3.3",

@@ -1,4 +1,3 @@
-import commonConfig from "@hytusium/eslint-config-common"
 import {
   FlatCompat,
   mergeConfig,
@@ -18,19 +17,13 @@ const config = mergeConfig(
   },
 
   // extends
-  {
-    extends: [
-      // * @hytusium/eslint-config-common
-      ...commonConfig,
-      // * @typescript-eslint recommended-type-checked
-      ...tseslintConfig.recommendedTypeChecked,
-      // * eslint-pluigin-import typescript
-      ...compat.config(pluginImport.configs.typescript),
-    ],
-  },
+  // * @typescript-eslint recommended-type-checked
+  ...tseslintConfig.recommendedTypeChecked,
+  // * eslint-pluigin-import typescript
+  ...compat.config(pluginImport.configs.typescript),
 
-  // settings
   {
+    // settings
     settings: {
       "import/parsers": {
         "@typescript-eslint/parser": [".ts", ".tsx", ".cts", "mts"],
@@ -40,9 +33,8 @@ const config = mergeConfig(
         node: true,
       },
     },
-  },
 
-  {
+    // rules
     rules: {
       "@typescript-eslint/explicit-module-boundary-types": "off",
       "@typescript-eslint/no-unsafe-assignment": "off",
@@ -65,6 +57,12 @@ const config = mergeConfig(
       "@typescript-eslint/no-redundant-type-constituents": "off",
       // for eslint-plugin-unused-imports
       "@typescript-eslint/no-unused-vars": "off",
+
+      // * https://typescript-eslint.io/troubleshooting/typed-linting/performance/
+      "import/named": "off",
+      "import/namespace": "off",
+      "import/default": "off",
+      "import/no-named-as-default-member": "off",
     },
   }
 )

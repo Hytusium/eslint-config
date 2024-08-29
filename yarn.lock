@@ -301,8 +301,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hytusium/eslint-config-collections@workspace:."
   dependencies:
+    "@hytusium/eslint-config-common": "workspace:*"
     "@hytusium/eslint-config-typescript": "workspace:*"
     "@hytusium/eslint-plugins": "workspace:*"
+    "@types/node": "npm:20.16.2"
     eslint: "npm:9.9.1"
     npm-run-all2: "npm:6.2.2"
     prettier: "npm:3.3.3"
@@ -317,7 +319,7 @@ __metadata:
   resolution: "@hytusium/eslint-config-common@workspace:packages/common"
   dependencies:
     "@hytusium/eslint-plugins": "workspace:*"
-    "@types/node": "npm:22.5.0"
+    "@types/node": "npm:20.16.2"
     typescript: "npm:5.5.4"
   peerDependencies:
     eslint: ">=8.56.0"
@@ -328,9 +330,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hytusium/eslint-config-react@workspace:packages/react"
   dependencies:
-    "@hytusium/eslint-config-common": "workspace:*"
     "@hytusium/eslint-plugins": "workspace:*"
-    "@types/node": "npm:22.5.0"
+    "@types/node": "npm:20.16.2"
     typescript: "npm:5.5.4"
   peerDependencies:
     eslint: ">=8.56.0"
@@ -341,9 +342,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hytusium/eslint-config-typescript@workspace:packages/typescript"
   dependencies:
-    "@hytusium/eslint-config-common": "workspace:*"
     "@hytusium/eslint-plugins": "workspace:*"
-    "@types/node": "npm:22.5.0"
+    "@types/node": "npm:20.16.2"
     eslint-import-resolver-typescript: "npm:3.6.1"
     eslint-plugin-import: "npm:2.29.1"
     typescript: "npm:5.5.4"
@@ -356,10 +356,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hytusium/eslint-config@workspace:packages/all"
   dependencies:
+    "@hytusium/eslint-config-common": "workspace:*"
     "@hytusium/eslint-config-react": "workspace:*"
     "@hytusium/eslint-config-typescript": "workspace:*"
     "@hytusium/eslint-plugins": "workspace:*"
-    "@types/node": "npm:22.5.0"
+    "@types/node": "npm:20.16.2"
     typescript: "npm:5.5.4"
   peerDependencies:
     eslint: ">=8.56.0"
@@ -375,7 +376,7 @@ __metadata:
     "@eslint/js": "npm:9.9.1"
     "@types/eslint__eslintrc": "npm:2.1.2"
     "@types/eslint__js": "npm:8.42.3"
-    "@types/node": "npm:22.5.0"
+    "@types/node": "npm:20.16.2"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
     eslint-plugin-n: "npm:17.10.2"
@@ -509,12 +510,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.5.0":
-  version: 22.5.0
-  resolution: "@types/node@npm:22.5.0"
+"@types/node@npm:20.16.2":
+  version: 20.16.2
+  resolution: "@types/node@npm:20.16.2"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10/89af3bd217b1559b645a9ed16d4ae3add75749814cbd8eefddd1b96003d1973afb1c8a2b23d69f3a8cc6c532e3aa185eaf5cc29a6e7c42c311a2aad4c99430ae
+  checksum: 10/fcae2ffaa681c2947cd3dae67a6dcf83ef666fc0994281ad881b9e3bb542fec3a9206d9ce899c20e5cdddace2b96b42e32f247864de9baf95756c07b9eff15d7
   languageName: node
   linkType: hard
 

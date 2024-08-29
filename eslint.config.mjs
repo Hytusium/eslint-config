@@ -1,18 +1,30 @@
+import commonConfig from "@hytusium/eslint-config-common"
 import typescriptConfig from "@hytusium/eslint-config-typescript"
 import { mergeConfig, prettierConfig } from "@hytusium/eslint-plugins"
 
+const ignoreFiles = [
+  "**/node_modules/**",
+  "**/.yarn/**",
+  "**/dist/**",
+  "packages/**/dist/index.d.ts",
+]
+
 export default mergeConfig(
   {
-    extends: [
-      // * @hytusium/eslint-config-typescript
-      ...typescriptConfig,
-      // * eslint-config-prettier
-      prettierConfig,
-    ],
+    ignores: ignoreFiles,
   },
+
+  // extends
+  // * @hytusium/eslint-config-common
+  ...commonConfig,
+  // * @hytusium/eslint-config-typescript
+  ...typescriptConfig,
+  // * eslint-config-prettier
+  prettierConfig,
 
   // base options
   {
+    ignores: ignoreFiles,
     languageOptions: {
       parserOptions: {
         // TODO: remove project after projectService is fixed.
@@ -33,6 +45,7 @@ export default mergeConfig(
         //     "eslint.config.mjs",
         //     "prettier.config.mjs",
         //   ],
+        //   defaultProject: "./tsconfig.json",
         // },
 
         tsconfigRootDir: import.meta.dirname,

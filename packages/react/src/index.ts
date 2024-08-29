@@ -1,4 +1,3 @@
-import commonConfig from "@hytusium/eslint-config-common"
 import {
   FlatCompat,
   mergeConfig,
@@ -21,33 +20,25 @@ const config = mergeConfig(
   },
 
   // extends
-  {
-    extends: [
-      // * @hytusium/eslint-config-common
-      ...commonConfig,
-      // TODO: change the type definition of `eslint-plugin-react*` (to flat config)
-      // * eslint-plugin-react recommended
-      ...fixupConfigRules(compat.config(pluginReact.configs.recommended)),
-      // * eslint-plugin-react jsx-runtime
-      ...fixupConfigRules(compat.config(pluginReact.configs["jsx-runtime"])),
-      // * eslint-plugin-react-hooks recommended
-      ...fixupConfigRules(compat.config(pluginReactHooks.configs.recommended)),
-      // * eslint-plugin-import react
-      ...fixupConfigRules(compat.config(pluginImport.configs.react)),
-    ],
-  },
+  // TODO: change the type definition of `eslint-plugin-react*` (to flat config)
+  // * eslint-plugin-react recommended
+  ...fixupConfigRules(compat.config(pluginReact.configs.recommended)),
+  // * eslint-plugin-react jsx-runtime
+  ...fixupConfigRules(compat.config(pluginReact.configs["jsx-runtime"])),
+  // * eslint-plugin-react-hooks recommended
+  ...fixupConfigRules(compat.config(pluginReactHooks.configs.recommended)),
+  // * eslint-plugin-import react
+  ...fixupConfigRules(compat.config(pluginImport.configs.react)),
 
-  // settings
   {
+    // settings
     settings: {
       react: {
         version: "detect",
       },
     },
-  },
 
-  // rules
-  {
+    // rules
     rules: {
       // * Disallow missing props validation in a React component definition
       "react/prop-types": "off",

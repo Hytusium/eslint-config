@@ -13,9 +13,6 @@ import {
 // Config transformer
 const compat = new FlatCompat()
 
-// ignore files
-const ignoreFiles = ["**/node_modules/**", "**/.yarn/**", "**/dist/**"]
-
 /**
  * Common/Base config in all @hytusium projects.
  */
@@ -28,24 +25,15 @@ const config = mergeConfig(
     },
   },
 
-  // ignore files
-  {
-    ignores: ignoreFiles,
-  },
-
   // extends
-  {
-    extends: [
-      // * eslint recommended
-      eslint.configs.recommended,
-      // * eslint-plugin-n recommended
-      pluginNode.configs["flat/recommended"],
-      // * eslint-plugin-import recommended (transform LegacyConfig to FlatConfig using `FlatCompat`)
-      ...fixupConfigRules(compat.config(pluginImport.configs.recommended)),
-      // * eslint-plugin-unicorn recommended
-      pluginUnicorn.configs["flat/recommended"],
-    ],
-  },
+  // * eslint recommended
+  eslint.configs.recommended,
+  // * eslint-plugin-n recommended
+  pluginNode.configs["flat/recommended"],
+  // * eslint-plugin-import recommended (transform LegacyConfig to FlatConfig using `FlatCompat`)
+  ...fixupConfigRules(compat.config(pluginImport.configs.recommended)),
+  // * eslint-plugin-unicorn recommended
+  pluginUnicorn.configs["flat/recommended"],
 
   // rules
   {

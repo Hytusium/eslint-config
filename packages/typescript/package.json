@@ -24,11 +24,10 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@hytusium/eslint-config-common": "workspace:*",
     "@hytusium/eslint-plugins": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "22.5.0",
+    "@types/node": "20.16.2",
     "eslint-import-resolver-typescript": "3.6.1",
     "eslint-plugin-import": "2.29.1",
     "typescript": "5.5.4"
