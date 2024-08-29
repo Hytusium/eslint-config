@@ -19,7 +19,6 @@ export default mergeConfig(
 
   // base options
   {
-    ignores: ignoreFiles,
     languageOptions: {
       parserOptions: {
         // TODO: remove project after projectService is fixed.
