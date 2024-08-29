@@ -2,12 +2,7 @@ import commonConfig from "@hytusium/eslint-config-common"
 import typescriptConfig from "@hytusium/eslint-config-typescript"
 import { mergeConfig, prettierConfig } from "@hytusium/eslint-plugins"
 
-const ignoreFiles = [
-  "**/node_modules/**",
-  "**/.yarn/**",
-  "**/dist/**",
-  "packages/**/dist/index.d.ts",
-]
+const ignoreFiles = ["**/node_modules/**", "**/.yarn/**", "**/dist/**"]
 
 export default mergeConfig(
   {
