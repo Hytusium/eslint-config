@@ -1,3 +1,4 @@
+import commonConfig from "@hytusium/eslint-config-common"
 import {
   FlatCompat,
   mergeConfig,
@@ -17,6 +18,8 @@ const config = mergeConfig(
   },
 
   // extends
+  // * @hytusium/eslint-config-common
+  ...commonConfig,
   // * @typescript-eslint recommended-type-checked
   ...tseslintConfig.recommendedTypeChecked,
   // * eslint-pluigin-import typescript
@@ -31,6 +34,15 @@ const config = mergeConfig(
       "import/resolver": {
         typescript: true,
         node: true,
+      },
+      // ignore .d.ts files for projectService
+      "import/ignore": [".d.ts$"],
+    },
+
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
       },
     },
 
@@ -63,6 +75,7 @@ const config = mergeConfig(
       "import/namespace": "off",
       "import/default": "off",
       "import/no-named-as-default-member": "off",
+      "import/no-unresolved": "off",
     },
   }
 )

@@ -330,6 +330,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hytusium/eslint-config-react@workspace:packages/react"
   dependencies:
+    "@hytusium/eslint-config-common": "workspace:*"
     "@hytusium/eslint-plugins": "workspace:*"
     "@types/node": "npm:20.16.2"
     typescript: "npm:5.5.4"
@@ -342,6 +343,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hytusium/eslint-config-typescript@workspace:packages/typescript"
   dependencies:
+    "@hytusium/eslint-config-common": "workspace:*"
     "@hytusium/eslint-plugins": "workspace:*"
     "@types/node": "npm:20.16.2"
     eslint-import-resolver-typescript: "npm:3.6.3"
@@ -356,7 +358,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hytusium/eslint-config@workspace:packages/all"
   dependencies:
-    "@hytusium/eslint-config-common": "workspace:*"
     "@hytusium/eslint-config-react": "workspace:*"
     "@hytusium/eslint-config-typescript": "workspace:*"
     "@hytusium/eslint-plugins": "workspace:*"

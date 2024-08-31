@@ -1,3 +1,4 @@
+import commonConfig from "@hytusium/eslint-config-common"
 import {
   FlatCompat,
   mergeConfig,
@@ -20,6 +21,8 @@ const config = mergeConfig(
   },
 
   // extends
+  // * @hytusium/eslint-config-common
+  ...commonConfig,
   // TODO: change the type definition of `eslint-plugin-react*` (to flat config)
   // * eslint-plugin-react recommended
   ...fixupConfigRules(compat.config(pluginReact.configs.recommended)),
