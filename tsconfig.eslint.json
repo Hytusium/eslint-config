@@ -1,7 +1,0 @@
-{
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "checkJs": true
-  },
-  "include": ["scripts", "eslint.config.mjs", "prettier.config.mjs"]
-}
