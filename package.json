@@ -24,7 +24,7 @@
     "@hytusium/eslint-config-common": "workspace:*",
     "@hytusium/eslint-config-typescript": "workspace:*",
     "@hytusium/eslint-plugins": "workspace:*",
-    "@types/node": "20.16.2",
+    "@types/node": "20.17.10",
     "eslint": "9.9.1",
     "npm-run-all2": "6.2.2",
     "prettier": "3.3.3",

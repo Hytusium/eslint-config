@@ -304,7 +304,7 @@ __metadata:
     "@hytusium/eslint-config-common": "workspace:*"
     "@hytusium/eslint-config-typescript": "workspace:*"
     "@hytusium/eslint-plugins": "workspace:*"
-    "@types/node": "npm:20.16.2"
+    "@types/node": "npm:20.17.10"
     eslint: "npm:9.9.1"
     npm-run-all2: "npm:6.2.2"
     prettier: "npm:3.3.3"
@@ -319,7 +319,7 @@ __metadata:
   resolution: "@hytusium/eslint-config-common@workspace:packages/common"
   dependencies:
     "@hytusium/eslint-plugins": "workspace:*"
-    "@types/node": "npm:20.16.2"
+    "@types/node": "npm:20.17.10"
     typescript: "npm:5.5.4"
   peerDependencies:
     eslint: ">=8.56.0"
@@ -332,7 +332,7 @@ __metadata:
   dependencies:
     "@hytusium/eslint-config-common": "workspace:*"
     "@hytusium/eslint-plugins": "workspace:*"
-    "@types/node": "npm:20.16.2"
+    "@types/node": "npm:20.17.10"
     typescript: "npm:5.5.4"
   peerDependencies:
     eslint: ">=8.56.0"
@@ -345,7 +345,7 @@ __metadata:
   dependencies:
     "@hytusium/eslint-config-common": "workspace:*"
     "@hytusium/eslint-plugins": "workspace:*"
-    "@types/node": "npm:20.16.2"
+    "@types/node": "npm:20.17.10"
     eslint-import-resolver-typescript: "npm:3.6.3"
     eslint-plugin-import: "npm:2.29.1"
     typescript: "npm:5.5.4"
@@ -361,7 +361,7 @@ __metadata:
     "@hytusium/eslint-config-react": "workspace:*"
     "@hytusium/eslint-config-typescript": "workspace:*"
     "@hytusium/eslint-plugins": "workspace:*"
-    "@types/node": "npm:20.16.2"
+    "@types/node": "npm:20.17.10"
     typescript: "npm:5.5.4"
   peerDependencies:
     eslint: ">=8.56.0"
@@ -377,7 +377,7 @@ __metadata:
     "@eslint/js": "npm:9.9.1"
     "@types/eslint__eslintrc": "npm:2.1.2"
     "@types/eslint__js": "npm:8.42.3"
-    "@types/node": "npm:20.16.2"
+    "@types/node": "npm:20.17.10"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
     eslint-plugin-n: "npm:17.10.2"
@@ -518,12 +518,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.16.2":
-  version: 20.16.2
-  resolution: "@types/node@npm:20.16.2"
+"@types/node@npm:20.17.10":
+  version: 20.17.10
+  resolution: "@types/node@npm:20.17.10"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10/fcae2ffaa681c2947cd3dae67a6dcf83ef666fc0994281ad881b9e3bb542fec3a9206d9ce899c20e5cdddace2b96b42e32f247864de9baf95756c07b9eff15d7
+  checksum: 10/9a1bcb2f25ce1ad249497e5f10ed984bf0ec476439fad2e965c3d6cc4642abb23c5e8400f7e48e55ff121d2b80b14bdc1bd4eac7ff6848154033a2be25fffb17
   languageName: node
   linkType: hard
 
