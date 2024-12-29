@@ -1,6 +1,6 @@
 {
   "name": "@hytusium/eslint-config-common",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An eslint config for personal (kash / Hytus) projects, which defines common rules",
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@hytusium/eslint-plugins": "workspace:*"
+    "@hytusium/eslint-plugins": "0.1.1"
   },
   "devDependencies": {
     "@types/node": "22.10.2",

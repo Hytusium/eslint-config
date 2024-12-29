@@ -6,7 +6,7 @@
   ],
   "author": "kash / Hytus <kash@hytus.net>",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "scripts": {
     "lint": "run-p \"lint:*\"",
@@ -22,9 +22,9 @@
     "publish": "pnpm publish --access public --filter \"./packages/**\" -r"
   },
   "devDependencies": {
-    "@hytusium/eslint-config-common": "workspace:*",
-    "@hytusium/eslint-config-typescript": "workspace:*",
-    "@hytusium/eslint-plugins": "workspace:*",
+    "@hytusium/eslint-config-common": "0.1.1",
+    "@hytusium/eslint-config-typescript": "0.1.1",
+    "@hytusium/eslint-plugins": "0.1.1",
     "@types/node": "22.10.2",
     "eslint": "9.17.0",
     "npm-run-all2": "7.0.2",

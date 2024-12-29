@@ -4,26 +4,21 @@ Shareable and usecase based ESLint configs for kash / Hytus (@KashEight)'s proje
 It is based on ESLint flat config (https://eslint.org/docs/latest/use/configure/configuration-files-new).
 
 ## Config Includes
-- All
-- ECMAScript/JavaScript (Common)
-- React
-- TypeScript
+- [All](https://github.com/Hytusium/eslint-config/tree/master/packages/all)
+- [ECMAScript/JavaScript (Common)](https://github.com/Hytusium/eslint-config/tree/master/packages/common)
+- [React](https://github.com/Hytusium/eslint-config/tree/master/packages/react)
+- [TypeScript](https://github.com/Hytusium/eslint-config/tree/master/packages/typescript)
 
-## Installation (WIP)
+## Installation
 
-**NOTE: This project has NOT published on npm yet.**
+See above packages.
 
-### All Configs
+## Usage
 
-```sh
-npm i --save-dev @hytusium/eslint-config # for npm
-yarn add -D @hytusium/eslint-config      # for yarn
-pnpm add -D @hytusium/eslint-config      # for pnpm
-```
-
-in `eslint.config.js`
+in `eslint.config.js`:
 
 ```js
+// Change libraries as you can
 import hytusiumConfig from "@hytusium/eslint-config"
 
 export default [
@@ -31,26 +26,6 @@ export default [
 ]
 ```
 
-### ECMAScript/JavaScript (Common) Configs
+## LICENSE
 
-```sh
-npm i --save-dev @hytusium/eslint-config-common # for npm
-yarn add -D @hytusium/eslint-config-common      # for yarn
-pnpm add -D @hytusium/eslint-config-common      # for pnpm
-```
-
-### React Configs
-
-```sh
-npm i --save-dev @hytusium/eslint-config-react # for npm
-yarn add -D @hytusium/eslint-config-react      # for yarn
-pnpm add -D @hytusium/eslint-config-react      # for pnpm
-```
-
-### TypeScript Configs
-
-```sh
-npm i --save-dev @hytusium/eslint-config-typescript # for npm
-yarn add -D @hytusium/eslint-config-typescript      # for yarn
-pnpm add -D @hytusium/eslint-config-typescript      # for pnpm
-```
+MIT
