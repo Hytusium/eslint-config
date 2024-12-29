@@ -2,6 +2,11 @@
   "name": "@hytusium/eslint-config",
   "version": "0.1.1",
   "description": "An eslint config for personal (kash / Hytus) projects, which contains all configs",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Hytusium/eslint-config.git",
