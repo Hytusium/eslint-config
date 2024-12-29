@@ -1,16 +1,13 @@
 import commonConfig from "@hytusium/eslint-config-common"
+import type { ConfigArray } from "@hytusium/eslint-plugins"
 import {
-  FlatCompat,
   mergeConfig,
   tseslintPlugin,
   tseslintConfig,
   pluginImport,
 } from "@hytusium/eslint-plugins"
 
-// Config transformer
-const compat = new FlatCompat()
-
-const config = mergeConfig(
+const config: ConfigArray = mergeConfig(
   {
     plugins: {
       ["@typescript-eslint"]: tseslintPlugin,
@@ -23,7 +20,7 @@ const config = mergeConfig(
   // * @typescript-eslint recommended-type-checked
   ...tseslintConfig.recommendedTypeChecked,
   // * eslint-pluigin-import typescript
-  ...compat.config(pluginImport.configs.typescript),
+  pluginImport.flatConfigs.typescript,
 
   {
     // settings
@@ -35,8 +32,6 @@ const config = mergeConfig(
         typescript: true,
         node: true,
       },
-      // ignore .d.ts files for projectService
-      "import/ignore": [".d.ts$"],
     },
 
     languageOptions: {

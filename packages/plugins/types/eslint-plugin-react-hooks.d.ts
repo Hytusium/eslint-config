@@ -1,9 +1,9 @@
 declare module "eslint-plugin-react-hooks" {
-  import type { ESLint, Rule } from "eslint"
+  import type { ESLint, Linter } from "eslint"
 
-  const exprt: {
+  const exprt: ESLint.Plugin & {
     configs: {
-      recommended: ESLint.ConfigData
+      recommended: Linter.LegacyConfig
     }
     rules: Record<string, Rule.RuleModule>
   }

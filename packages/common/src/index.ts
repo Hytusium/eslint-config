@@ -1,26 +1,20 @@
 import {
-  FlatCompat,
   eslint,
   pluginImport,
   pluginUnusedImports,
   pluginNode,
-  pluginUnicorn,
   mergeConfig,
-  fixupConfigRules,
-  fixupPluginRules,
+  type ConfigArray,
 } from "@hytusium/eslint-plugins"
-
-// Config transformer
-const compat = new FlatCompat()
 
 /**
  * Common/Base config in all @hytusium projects.
  */
-const config = mergeConfig(
+const config: ConfigArray = mergeConfig(
   // set plugin rule keys
   {
     plugins: {
-      ["import"]: fixupPluginRules(pluginImport),
+      ["node"]: pluginNode,
       ["unused-imports"]: pluginUnusedImports,
     },
   },
@@ -30,17 +24,14 @@ const config = mergeConfig(
   eslint.configs.recommended,
   // * eslint-plugin-n recommended
   pluginNode.configs["flat/recommended"],
-  // * eslint-plugin-import recommended (transform LegacyConfig to FlatConfig using `FlatCompat`)
-  ...fixupConfigRules(compat.config(pluginImport.configs.recommended)),
-  // * eslint-plugin-unicorn recommended
-  pluginUnicorn.configs["flat/recommended"],
+  // * eslint-plugin-import recommended
+  pluginImport.flatConfigs.recommended,
 
   // rules
   {
     rules: {
-      // eslint-plugin-unicorn rules
-      // * enforce using the `node:` protocol when importing Node.js builtin modules.
-      "unicorn/prefer-node-protocol": "error",
+      // eslint-plugin-node rules
+      "node/prefer-node-protocol": "error",
 
       // eslint-plugin-unused-imports rules
       "unused-imports/no-unused-imports": "error",
