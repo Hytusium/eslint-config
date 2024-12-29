@@ -1,37 +1,38 @@
 import type { ESLint, Linter, Rule } from "eslint"
 
-export type PrettierConfig = Linter.FlatConfig
+export type PrettierConfig = Linter.Config
 
-export type PluginReactHooks = {
+export type PluginReactHooks = ESLint.Plugin & {
   configs: {
-    recommended: ESLint.ConfigData
+    recommended: Linter.LegacyConfig
   }
   rules: Record<string, Rule.RuleModule>
 }
 
-export type PluginReact = {
-  configs: {
-    recommended: ESLint.ConfigData
-    all: ESLint.ConfigData
-    "jsx-runtime": ESLint.ConfigData
+export type PluginImport = ESLint.Plugin & {
+  meta: {
+    name: string
+    version: string
   }
-  rules: Record<string, Rule.RuleModule>
-}
-
-export type PluginUnusedImports = {
-  rules: Record<string, Rule.RuleModule>
-}
-
-export type PluginImport = {
   configs: {
-    recommended: ESLint.ConfigData
-    errors: ESLint.ConfigData
-    warnings: ESLint.ConfigData
-    "stage-0": ESLint.ConfigData
-    react: ESLint.ConfigData
-    "react-native": ESLint.ConfigData
-    electron: ESLint.ConfigData
-    typescript: ESLint.ConfigData
+    recommended: Linter.LegacyConfig
+    errors: Linter.LegacyConfig
+    warnings: Linter.LegacyConfig
+    "stage-0": Linter.LegacyConfig
+    react: Linter.LegacyConfig
+    "react-native": Linter.LegacyConfig
+    electron: Linter.LegacyConfig
+    typescript: Linter.LegacyConfig
+  }
+  flatConfigs: {
+    recommended: Linter.Config
+    errors: Linter.Config
+    warnings: Linter.Config
+    "stage-0": Linter.Config
+    react: Linter.Config
+    "react-native": Linter.Config
+    electron: Linter.Config
+    typescript: Linter.Config
   }
   rules: Record<string, Rule.RuleModule>
 }
