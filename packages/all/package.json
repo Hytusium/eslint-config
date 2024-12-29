@@ -1,6 +1,6 @@
 {
   "name": "@hytusium/eslint-config",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An eslint config for personal (kash / Hytus) projects, which contains all configs",
   "files": [
     "dist",
@@ -29,9 +29,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@hytusium/eslint-config-react": "0.1.1",
-    "@hytusium/eslint-config-typescript": "0.1.1",
-    "@hytusium/eslint-plugins": "0.1.1"
+    "@hytusium/eslint-config-react": "0.1.2",
+    "@hytusium/eslint-config-typescript": "0.1.2",
+    "@hytusium/eslint-plugins": "0.1.2"
   },
   "devDependencies": {
     "@types/node": "22.10.2",
