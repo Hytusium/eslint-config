@@ -1,6 +1,6 @@
 {
   "name": "@hytusium/eslint-config-common",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "An eslint config for personal (kash / Hytus) projects, which defines common rules",
   "files": [
     "dist",
@@ -29,7 +29,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@hytusium/eslint-plugins": "0.1.2"
+    "@hytusium/eslint-plugins": "0.1.3"
   },
   "devDependencies": {
     "@types/node": "22.10.5",
