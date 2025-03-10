@@ -41,7 +41,7 @@
     "@types/eslint": "9.6.1",
     "@types/node": "22.13.10",
     "typescript": "5.8.2",
-    "typescript-eslint": "8.26.0"
+    "typescript-eslint": "8.26.1"
   },
   "peerDependencies": {
     "eslint": ">=8.56.0"
