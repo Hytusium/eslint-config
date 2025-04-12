@@ -19,7 +19,7 @@
     "bump:patch": "tsx ./scripts/bump-version.ts --patch",
     "bump:minor": "tsx ./scripts/bump-version.ts --minor",
     "bump:major": "tsx ./scripts/bump-version.ts --major",
-    "publish": "pnpm publish --access public --filter \"./packages/**\" -r"
+    "publish": "pnpm publish --filter \"./packages/**\" -r"
   },
   "devDependencies": {
     "@hytusium/eslint-config-common": "0.1.3",
