@@ -20,5 +20,6 @@
     "allowUnreachableCode": true,
     "exactOptionalPropertyTypes": true
   },
+  "include": ["scripts/bump-version.ts", "eslint.config.mjs", "prettier.config.mjs"],
   "exclude": ["node_modules", "packages/*/dist"]
 }
