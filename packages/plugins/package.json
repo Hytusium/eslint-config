@@ -1,6 +1,6 @@
 {
   "name": "@hytusium/eslint-plugins",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "eslint plugins for personal (kash / Hytus) projects",
   "files": [
     "dist",

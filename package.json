@@ -6,7 +6,7 @@
   ],
   "author": "kash / Hytus <kash@hytus.net>",
   "license": "MIT",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "type": "module",
   "scripts": {
     "build": "turbo build",
@@ -25,9 +25,9 @@
     "publish": "pnpm publish --filter \"./packages/**\" -r"
   },
   "devDependencies": {
-    "@hytusium/eslint-config-common": "0.1.3",
-    "@hytusium/eslint-config-typescript": "0.1.3",
-    "@hytusium/eslint-plugins": "0.1.3",
+    "@hytusium/eslint-config-common": "0.1.4",
+    "@hytusium/eslint-config-typescript": "0.1.4",
+    "@hytusium/eslint-plugins": "0.1.4",
     "@types/node": "22.14.1",
     "eslint": "9.24.0",
     "npm-run-all2": "7.0.2",
