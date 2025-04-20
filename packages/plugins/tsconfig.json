@@ -5,5 +5,6 @@
     "rootDir": ".",
     "skipLibCheck": false
   },
-  "include": ["src", "types"]
+  "include": ["src", "types"],
+  "exclude": ["node_modules", "dist"]
 }
