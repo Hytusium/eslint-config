@@ -18,6 +18,7 @@
     "format:eslint": "eslint . --fix",
     "format:prettier": "prettier --write \"**/*.{js,mjs,ts,json}\"",
     "typecheck": "tsc --noEmit",
+    "typecheck:all": "turbo run typecheck",
     "bump:patch": "tsx ./scripts/bump-version.ts --patch",
     "bump:minor": "tsx ./scripts/bump-version.ts --minor",
     "bump:major": "tsx ./scripts/bump-version.ts --major",
