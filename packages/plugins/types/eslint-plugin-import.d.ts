@@ -32,5 +32,5 @@ declare module "eslint-plugin-import" {
     rules: Record<string, Rule.RuleModule>
   }
 
-  export = plugin
+  export default exprt
 }

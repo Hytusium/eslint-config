@@ -19,9 +19,9 @@ const config: ConfigArray = mergeConfig(
   // * @hytusium/eslint-config-common
   ...commonConfig,
   // * eslint-plugin-react recommended
-  pluginReact.configs.flat!.recommended,
+  pluginReact.configs.flat.recommended!,
   // * eslint-plugin-react jsx-runtime
-  pluginReact.configs.flat!["jsx-runtime"],
+  pluginReact.configs.flat["jsx-runtime"]!,
   // * eslint-plugin-import react
   pluginImport.flatConfigs.react,
 

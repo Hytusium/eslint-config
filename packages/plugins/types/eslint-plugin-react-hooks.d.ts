@@ -1,5 +1,7 @@
+// TODO: remove this file because it is no longer needed. instead, use official types
+
 declare module "eslint-plugin-react-hooks" {
-  import type { ESLint, Linter } from "eslint"
+  import type { ESLint, Linter, Rule } from "eslint"
 
   const exprt: ESLint.Plugin & {
     configs: {
@@ -8,5 +10,5 @@ declare module "eslint-plugin-react-hooks" {
     rules: Record<string, Rule.RuleModule>
   }
 
-  export = exprt
+  export default exprt
 }
