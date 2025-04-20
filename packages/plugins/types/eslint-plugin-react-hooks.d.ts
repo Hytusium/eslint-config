@@ -1,3 +1,5 @@
+// TODO: remove this file because it is no longer needed. instead, use official types
+
 declare module "eslint-plugin-react-hooks" {
   import type { ESLint, Linter, Rule } from "eslint"
 
