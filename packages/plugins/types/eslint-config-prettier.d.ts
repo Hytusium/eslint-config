@@ -3,5 +3,5 @@ declare module "eslint-config-prettier" {
 
   const exprt: Linter.Config
 
-  export = exprt
+  export default exprt
 }

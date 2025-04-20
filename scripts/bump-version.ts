@@ -28,11 +28,11 @@ const {
 let newVersion = ""
 
 if (major) {
-  newVersion = `${majorVersion + 1}.0.0`
+  newVersion = `${majorVersion! + 1}.0.0`
 } else if (minor) {
-  newVersion = `${majorVersion}.${minorVersion + 1}.0`
+  newVersion = `${majorVersion}.${minorVersion! + 1}.0`
 } else if (patch) {
-  newVersion = `${majorVersion}.${minorVersion}.${patchVersion + 1}`
+  newVersion = `${majorVersion}.${minorVersion}.${patchVersion! + 1}`
 } else {
   console.error("specify bump version")
 }

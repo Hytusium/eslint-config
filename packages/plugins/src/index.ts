@@ -31,5 +31,5 @@ export {
   configs as tseslintConfig,
   plugin as tseslintPlugin,
   parser as tseslintParser,
-  ConfigArray,
+  type ConfigArray,
 } from "typescript-eslint"

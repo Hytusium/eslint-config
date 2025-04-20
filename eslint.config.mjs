@@ -19,11 +19,6 @@ export default mergeConfig(
     languageOptions: {
       parserOptions: {
         projectService: {
-          allowDefaultProject: [
-            "scripts",
-            "eslint.config.mjs",
-            "prettier.config.mjs",
-          ],
           defaultProject: "./tsconfig.json",
         },
 
