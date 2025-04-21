@@ -22,7 +22,7 @@
   },
   "include": [
     "scripts/bump-version.ts",
-    "eslint.config.mjs",
+    "eslint.config.mts",
     "prettier.config.mjs"
   ],
   "exclude": ["node_modules", "packages"]
