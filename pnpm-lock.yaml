@@ -18,8 +18,8 @@ importers:
         specifier: 0.1.4
         version: 0.1.4(@typescript-eslint/eslint-plugin@8.30.1(@typescript-eslint/parser@8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3))(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/parser@8.30.1(eslint@9.25.1(jiti@2.4.2))(typescript@5.8.3))(eslint@9.25.1(jiti@2.4.2))
       '@types/node':
-        specifier: 22.14.1
-        version: 22.14.1
+        specifier: 22.15.18
+        version: 22.15.18
       eslint:
         specifier: 9.25.1
         version: 9.25.1(jiti@2.4.2)
@@ -61,8 +61,8 @@ importers:
         version: 9.17.0(jiti@2.4.2)
     devDependencies:
       '@types/node':
-        specifier: 22.14.1
-        version: 22.14.1
+        specifier: 22.15.18
+        version: 22.15.18
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -77,8 +77,8 @@ importers:
         version: 9.17.0(jiti@2.4.2)
     devDependencies:
       '@types/node':
-        specifier: 22.14.1
-        version: 22.14.1
+        specifier: 22.15.18
+        version: 22.15.18
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -114,8 +114,8 @@ importers:
         specifier: 9.6.1
         version: 9.6.1
       '@types/node':
-        specifier: 22.14.1
-        version: 22.14.1
+        specifier: 22.15.18
+        version: 22.15.18
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -136,8 +136,8 @@ importers:
         version: 9.17.0(jiti@2.4.2)
     devDependencies:
       '@types/node':
-        specifier: 22.14.1
-        version: 22.14.1
+        specifier: 22.15.18
+        version: 22.15.18
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -155,8 +155,8 @@ importers:
         version: 9.17.0(jiti@2.4.2)
     devDependencies:
       '@types/node':
-        specifier: 22.14.1
-        version: 22.14.1
+        specifier: 22.15.18
+        version: 22.15.18
       eslint-import-resolver-typescript:
         specifier: 4.3.4
         version: 4.3.4(eslint-plugin-import@2.31.0)(eslint@9.17.0(jiti@2.4.2))
@@ -481,8 +481,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@22.14.1':
-    resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
+  '@types/node@22.15.18':
+    resolution: {integrity: sha512-v1DKRfUdyW+jJhZNEI1PYy29S2YRxMV5AOO/x/SjKmW0acCIOqmbj6Haf9eHAhsPmrhlHSxEhv/1WszcLWV4cg==}
 
   '@typescript-eslint/eslint-plugin@8.30.1':
     resolution: {integrity: sha512-v+VWphxMjn+1t48/jO4t950D6KR8JaJuNXzi33Ve6P8sEmPr5k6CEXjdGwT6+LodVnEa91EQCtwjWNUCPweo+Q==}
@@ -2061,7 +2061,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@22.14.1':
+  '@types/node@22.15.18':
     dependencies:
       undici-types: 6.21.0
 
