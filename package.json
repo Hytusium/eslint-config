@@ -28,7 +28,7 @@
     "@hytusium/eslint-config-common": "0.1.4",
     "@hytusium/eslint-config-typescript": "0.1.4",
     "@hytusium/eslint-plugins": "0.1.4",
-    "@types/node": "22.15.30",
+    "@types/node": "22.15.35",
     "eslint": "9.27.0",
     "jiti": "2.4.2",
     "npm-run-all2": "8.0.4",
